@@ -1,0 +1,18 @@
+{% load bootstrap3 %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuevo cliente</title>
+</head>
+<body>
+<h1> Cliente nuevo</h1>
+
+<form method="POST" action="">{% csrf_token %} 
+<div class="form-group">
+	{{cliente.as_p}}
+	<input type="submit" value="Guardar" />
+</div>
+</form>
+</body>
+</html>
